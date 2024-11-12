@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Rashmi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #fff1f2 0%, #ffffff 50%, #fff1f2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(255, 228, 230, 0.5), transparent);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 20;
+            text-align: center;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .profile-image-container {
+            position: relative;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .profile-image-bg {
+            position: absolute;
+            inset: -1rem;
+            background-color: #fecdd3;
+            border-radius: 9999px;
+            transform: rotate(3deg);
+        }
+
+        .profile-image {
+            position: relative;
+            width: 25rem;
+            height: 30rem;
+            object-fit: cover;
+            border-radius: 9999px;
+            border: 4px solid white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 0;
+        }
+
+        .about-content {
+            max-width: 48rem;
+            margin: 0 auto;
+            text-align: center;
+            space-y: 2rem;
+        }
+
+        .heart-icon {
+            width: 3rem;
+            height: 3rem;
+            color: #f43f5e;
+            margin: 0 auto 2rem;
+        }
+
+        .about-text {
+            font-size: 1.25rem;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+        }
+
+        .qualities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .quality-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .quality-icon {
+            width: 2rem;
+            height: 2rem;
+            color: #fb7185;
+            margin: 0 auto 1rem;
+        }
+
+        .quality-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .quality-description {
+            color: #4b5563;
+        }
+
+        /* Message Section */
+        .message-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .message-content {
+            max-width: 42rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #4b5563;
+            font-size: 1.125rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            color: #4b5563;
+        }
+
+        @media (max-width: 768px) {
+            .qualities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .profile-image {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <div class="profile-image-bg"></div>
+                    <img src="./Rashmi.jpg" alt="Rashmi" class="profile-image">
+                </div>
+                <h1>Meet Rashmi</h1>
+                <p class="hero-subtitle">A beautiful soul with an even more beautiful heart ❤️</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <p class="about-text">
+                    Some people come into our lives and leave footprints on our hearts. Rashmi is one of those rare gems who brightens every room she walks into. Her infectious smile and warm personality make everyone around her feel special.
+                </p>
+                <div class="qualities-grid">
+                    <!-- Quality Cards -->
+                    <div class="quality-card">
+                        <svg class="quality-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <h3 class="quality-title">Kind Soul</h3>
+                        <p class="quality-description">Always there to lend an ear and offer support when needed</p>
+                    </div>
+                    <div class="quality-card">
+                        <svg class="quality-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <h3 class="quality-title">True Friend</h3>
+                        <p class="quality-description">Friendship with her is like finding a treasure you never knew you were looking for</p>
+                    </div>
+                    <div class="quality-card">
+                        <svg class="quality-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3l1.88 5.79h6.08l-4.92 3.58 1.88 5.79-4.92-3.58-4.92 3.58 1.88-5.79-4.92-3.58h6.08z"></path>
+                        </svg>
+                        <h3 class="quality-title">Beautiful Spirit</h3>
+                        <p class="quality-description">Her positive energy is contagious and uplifting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-content">
+                <h2 class="text-3xl font-bold mb-8">A Note to My Friend</h2>
+                <blockquote>
+                    "Dear Rashmi, thank you for being such an amazing friend. Your friendship has brought so much joy and laughter into my life. Here's to many more years of wonderful memories together! 💕"
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with love for my dear friend Rashmi ❤️</p>
+    </footer>
+</body>
+</html>
